@@ -21545,13 +21545,13 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param29 = function param29() {
+      var param3 = function param3() {
         ie_open('div', null, null, 'class', 'blog');
         $mainPost(opt_data, null, opt_ijData);
         $olderPosts(opt_data, null, opt_ijData);
         ie_close('div');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param29 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param3 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21570,23 +21570,23 @@ babelHelpers;
       ie_open('header');
       ie_open('small');
       itext('By ');
-      var dyn1 = opt_data.page.author;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn0 = opt_data.page.author;
+      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
       itext(' ');
       ie_open('span');
       itext('| ');
-      var dyn2 = opt_data.page.date;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn1 = opt_data.page.date;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('span');
       ie_close('small');
       ie_open('h3');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn2 = opt_data.page.title;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
       ie_close('header');
       ie_open('div', null, null, 'class', 'content');
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       ie_close('div');
       ie_close('article');
     }
@@ -21605,27 +21605,27 @@ babelHelpers;
     function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'posts-list');
       ie_open('div', null, null, 'class', 'container');
-      var childPageList58 = opt_data.site.index.children[0].children;
-      var childPageListLen58 = childPageList58.length;
-      for (var childPageIndex58 = 0; childPageIndex58 < childPageListLen58; childPageIndex58++) {
-        var childPageData58 = childPageList58[childPageIndex58];
-        if (opt_data.page.url != childPageData58.url) {
+      var childPageList32 = opt_data.site.index.children[0].children;
+      var childPageListLen32 = childPageList32.length;
+      for (var childPageIndex32 = 0; childPageIndex32 < childPageListLen32; childPageIndex32++) {
+        var childPageData32 = childPageList32[childPageIndex32];
+        if (opt_data.page.url != childPageData32.url) {
           ie_open('div', null, null, 'class', 'post-item container-blog');
-          ie_open('a', null, null, 'class', 'post-item__link', 'href', childPageData58.url);
+          ie_open('a', null, null, 'class', 'post-item__link', 'href', childPageData32.url);
           ie_open('small');
           itext('By ');
-          var dyn5 = childPageData58.author;
-          if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+          var dyn4 = childPageData32.author;
+          if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
           itext(' ');
           ie_open('span');
           itext('| ');
-          var dyn6 = childPageData58.date;
-          if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+          var dyn5 = childPageData32.date;
+          if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
           ie_close('span');
           ie_close('small');
           ie_open('h4', null, null, 'class', 'post-item__title');
-          var dyn7 = childPageData58.title;
-          if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
+          var dyn6 = childPageData32.title;
+          if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
           ie_close('h4');
           ie_close('a');
           ie_close('div');
@@ -21723,12 +21723,12 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'main');
-      var param65 = function param65() {
+      var param39 = function param39() {
         $templateAlias2(soy.$$assignDefaults({ elementClasses: 'topbar-docs-main' }, opt_data), null, opt_ijData);
         $templateAlias3({ section: opt_data.site.index.children[0] }, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'guide', content: param65 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'guide', content: param39 }, opt_data), null, opt_ijData);
       ie_close('div');
     }
     exports.render = $render;
@@ -21749,8 +21749,8 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'guide-header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('h1', null, null, 'class', 'title');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
+      var dyn7 = opt_data.page.title;
+      if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
       itext(' Guide');
       ie_close('h1');
       ie_close('div');
@@ -21759,8 +21759,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'docs-guide row');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
       ie_open('div', null, null, 'class', 'guide-content');
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
+      var dyn8 = opt_data.content;
+      if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
       ie_close('div');
       if (opt_data.site.githubRepo) {
         $contribute(opt_data, null, opt_ijData);
@@ -21889,8 +21889,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $templateAlias1(soy.$$assignDefaults({ elementClasses: 'topbar-invert topbar-fixed' }, opt_data), null, opt_ijData);
-      var dyn10 = opt_data.content;
-      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
       ie_close('main');
       ie_close('div');
     }
@@ -21974,8 +21974,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       ie_open('div', null, null, 'class', 'docs');
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+      var dyn10 = opt_data.content;
+      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
       ie_close('div');
       ie_close('main');
       ie_close('div');
@@ -22184,14 +22184,14 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param3 = function param3() {
+      var param137 = function param137() {
         $header(opt_data, null, opt_ijData);
         $demo(null, null, opt_ijData);
         $highlights(null, null, opt_ijData);
         $testimonial(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param3 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param137 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22215,8 +22215,8 @@ babelHelpers;
       ie_close('strong');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle');
-      var dyn0 = opt_data.site.index.description;
-      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
+      var dyn13 = opt_data.site.index.description;
+      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
       ie_close('h2');
       ie_open('h3');
       itext('Supported browsers: IE9+  -  Edge  -  Chrome  -  Firefox  -  Safari');
@@ -22247,7 +22247,7 @@ babelHelpers;
     function $demo(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'container-alloyeditor');
       ie_open('div', null, null, 'class', 'container-fluid container-fluid-960');
-      var param17 = function param17() {
+      var param151 = function param151() {
         ie_open('div', null, null, 'class', 'col-md-16');
         ie_open('h3', null, null, 'class', 'highlight-title');
         itext('In live demo, click/touch here');
@@ -22269,7 +22269,7 @@ babelHelpers;
         ie_close('p');
         ie_close('div');
       };
-      $templateAlias2({ divId: 'why', contentHtml: param17 }, null, opt_ijData);
+      $templateAlias2({ divId: 'why', contentHtml: param151 }, null, opt_ijData);
       ie_close('div');
       ie_close('div');
     }
@@ -22521,8 +22521,8 @@ babelHelpers;
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'id', opt_data.divId, 'contenteditable', 'true', 'data-placeholder', 'Write content here');
       if (opt_data.contentHtml) {
-        var dyn12 = opt_data.contentHtml;
-        if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
+        var dyn11 = opt_data.contentHtml;
+        if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
       }
       ie_close('div');
     }
@@ -22865,20 +22865,20 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s151_d34389eb(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s125_d34389eb(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       ie_open('span');
-      var dyn13 = opt_data.page.title;
-      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
+      var dyn12 = opt_data.page.title;
+      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s151_d34389eb = __deltemplate_s151_d34389eb;
+    exports.__deltemplate_s125_d34389eb = __deltemplate_s125_d34389eb;
     if (goog.DEBUG) {
-      __deltemplate_s151_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s151_d34389eb';
+      __deltemplate_s125_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s125_d34389eb';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s151_d34389eb);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s125_d34389eb);
 
     exports.render.params = ["section"];
     exports.render.types = { "section": "any" };
