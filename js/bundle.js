@@ -22184,14 +22184,14 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param137 = function param137() {
+      var param104 = function param104() {
         $header(opt_data, null, opt_ijData);
         $demo(null, null, opt_ijData);
         $highlights(null, null, opt_ijData);
         $testimonial(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param137 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param104 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22215,8 +22215,8 @@ babelHelpers;
       ie_close('strong');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle');
-      var dyn13 = opt_data.site.index.description;
-      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
+      var dyn11 = opt_data.site.index.description;
+      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
       ie_close('h2');
       ie_open('h3');
       itext('Supported browsers: IE9+  -  Edge  -  Chrome  -  Firefox  -  Safari');
@@ -22247,7 +22247,7 @@ babelHelpers;
     function $demo(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'container-alloyeditor');
       ie_open('div', null, null, 'class', 'container-fluid container-fluid-960');
-      var param151 = function param151() {
+      var param118 = function param118() {
         ie_open('div', null, null, 'class', 'col-md-16');
         ie_open('h3', null, null, 'class', 'highlight-title');
         itext('In live demo, click/touch here');
@@ -22269,7 +22269,7 @@ babelHelpers;
         ie_close('p');
         ie_close('div');
       };
-      $templateAlias2({ divId: 'why', contentHtml: param151 }, null, opt_ijData);
+      $templateAlias2({ divId: 'why', contentHtml: param118 }, null, opt_ijData);
       ie_close('div');
       ie_close('div');
     }
@@ -22359,19 +22359,22 @@ babelHelpers;
     function $testimonial(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'features');
       ie_open('div', null, null, 'class', 'container');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('section', null, null, 'class', 'feature');
-      ie_open('div', null, null, 'class', 'feature-graphic');
-      ie_open('span', null, null, 'class', 'icon-16-bullhorn');
-      itext('1');
-      ie_close('span');
-      ie_close('div');
-      ie_open('h3', null, null, 'class', 'feature-title');
-      itext('The core is separated from the UI');
+      ie_open('div', null, null, 'class', 'row text-center');
+      ie_open('h3', null, null, 'class', 'highlight-title');
+      itext('Testimonials');
       ie_close('h3');
+      ie_open('section', null, null, 'class', 'feature col-md-12 col-md-offset-2 col-lg-10 col-lg-offset-3');
+      ie_open('div', null, null, 'class', 'feature-graphic col-md-3');
+      ie_void('span', null, null, 'class', 'icon-16-bullhorn');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-13 text-left');
       ie_open('p', null, null, 'class', 'feature-description');
-      itext('The main idea behind the editor is to fully separate the core from the UI. And not only to separate it, but to allow people to easily add new Buttons and Toolbars or event to create a completely new UI based on a different Framework or even vanilla JavaScript.');
+      itext('"The new AlloyEditor is so intuitive, simple, and useful that you won\'t realize you are actually using an editor. Just focus on the content while AlloyEditor takes care of all the rest."');
       ie_close('p');
+      ie_open('p', null, null, 'class', 'h4');
+      itext(' \u2014 Sergio Gonz\xE1lez, Collaboration Lead, Liferay Inc.');
+      ie_close('p');
+      ie_close('div');
       ie_close('section');
       ie_close('div');
       ie_close('div');
@@ -22521,8 +22524,8 @@ babelHelpers;
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'id', opt_data.divId, 'contenteditable', 'true', 'data-placeholder', 'Write content here');
       if (opt_data.contentHtml) {
-        var dyn11 = opt_data.contentHtml;
-        if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+        var dyn12 = opt_data.contentHtml;
+        if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
       }
       ie_close('div');
     }
@@ -22865,20 +22868,20 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s125_d34389eb(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s151_d34389eb(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       ie_open('span');
-      var dyn12 = opt_data.page.title;
-      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
+      var dyn13 = opt_data.page.title;
+      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s125_d34389eb = __deltemplate_s125_d34389eb;
+    exports.__deltemplate_s151_d34389eb = __deltemplate_s151_d34389eb;
     if (goog.DEBUG) {
-      __deltemplate_s125_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s125_d34389eb';
+      __deltemplate_s151_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s151_d34389eb';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s125_d34389eb);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s151_d34389eb);
 
     exports.render.params = ["section"];
     exports.render.types = { "section": "any" };
