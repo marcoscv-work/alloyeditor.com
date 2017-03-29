@@ -22143,348 +22143,6 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageIndex.
-     * @public
-     */
-
-    goog.module('pageIndex.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('Demo.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param104 = function param104() {
-        $header(opt_data, null, opt_ijData);
-        $demo(null, null, opt_ijData);
-        $highlights(null, null, opt_ijData);
-        $testimonial(null, null, opt_ijData);
-        $footer(null, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param104 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageIndex.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $header(opt_data, opt_ignored, opt_ijData) {
-      ie_open('header', null, null, 'class', 'header header-hero');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('h1', null, null, 'class', 'header-title');
-      itext('ALLOY');
-      ie_open('strong');
-      itext('EDITOR');
-      ie_close('strong');
-      ie_close('h1');
-      ie_open('h2', null, null, 'class', 'header-subtitle');
-      var dyn11 = opt_data.site.index.description;
-      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
-      ie_close('h2');
-      ie_open('h3');
-      itext('Supported browsers: IE9+  -  Edge  -  Chrome  -  Firefox  -  Safari');
-      ie_close('h3');
-      ie_open('div', null, null, 'class', 'header-cta');
-      ie_open('a', null, null, 'href', '#', 'class', 'btn btn-primary');
-      itext('GET STARTED');
-      ie_close('a');
-      ie_open('a', null, null, 'href', '#', 'class', 'btn btn-default');
-      itext('DOWNLOAD (1.3.1)');
-      ie_close('a');
-      ie_close('div');
-      ie_close('div');
-      ie_close('header');
-    }
-    exports.header = $header;
-    if (goog.DEBUG) {
-      $header.soyTemplateName = 'pageIndex.header';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $demo(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'container-alloyeditor');
-      ie_open('div', null, null, 'class', 'container-fluid container-fluid-960');
-      var param118 = function param118() {
-        ie_open('div', null, null, 'class', 'col-md-16');
-        ie_open('h3', null, null, 'class', 'highlight-title');
-        itext('In live demo, click/touch here');
-        ie_close('h3');
-        ie_open('p', null, null, 'class', 'highlight-description');
-        itext('Throug the WHY, a story will arise, which will create trust and make an idea, a service, or a project uniqu. ');
-        ie_open('strong');
-        itext('As Simon Sinek has said');
-        ie_close('strong');
-        itext(', having loyal users is all about attracting the people who share ');
-        ie_open('u');
-        itext('your fundamental beliefs');
-        ie_close('u');
-        itext('. Remember: ');
-        ie_open('cite');
-        itext('People don\'t buy what you do');
-        ie_close('cite');
-        itext('. They buy why you do it. I\'ll say it again: People don\'t buy what you do. They buy why you do it.');
-        ie_close('p');
-        ie_close('div');
-      };
-      $templateAlias2({ divId: 'why', contentHtml: param118 }, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.demo = $demo;
-    if (goog.DEBUG) {
-      $demo.soyTemplateName = 'pageIndex.demo';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $highlights(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'highlights');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('section', null, null, 'class', 'highlight row');
-      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-      ie_open('h3', null, null, 'class', 'highlight-title');
-      itext('The core is separated from the UI');
-      ie_close('h3');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('The main idea behind the editor is to fully separate the core from the UI. And not only to separate it, but to allow people to easily add new Buttons and Toolbars or event to create a completely new UI based on a different Framework or even vanilla JavaScript.');
-      ie_close('p');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('The core AlloyEditor uses CKEditor under the hood to deal with the editable content.This means the existing CKEditor plugins can be reused.');
-      ie_close('p');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_ui.png');
-      ie_close('img');
-      ie_close('div');
-      ie_close('section');
-      ie_open('section', null, null, 'class', 'highlight row');
-      ie_open('div', null, null, 'class', 'col-md-6 col-md-push-9');
-      ie_open('h3', null, null, 'class', 'highlight-title');
-      itext('So many things to do!');
-      ie_close('h3');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('AlloyEditor comes out of the box with as much editing power as you\'ll probably ever need, but we plan to keep on adding new features so you can edit your content in any way you can imagine.');
-      ie_close('p');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('Community Powered In addition to the out of the box options, AlloyEditor you can easily leverage any of the existing functionality and plugins developed for CKEditor.');
-      ie_close('p');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
-      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_estanterias.png');
-      ie_close('img');
-      ie_close('div');
-      ie_close('section');
-      ie_open('section', null, null, 'class', 'highlight row');
-      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-      ie_open('h3', null, null, 'class', 'highlight-title');
-      itext('We ');
-      ie_void('span', null, null, 'class', 'icon-16-heart-full');
-      itext(' Writing');
-      ie_close('h3');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('In the AlloyEditor team, we believe the content is the king, and so, we want to create a simple user interface where what you write is all that really matters.');
-      ie_close('p');
-      ie_open('p', null, null, 'class', 'highlight-description');
-      itext('After years of suffering bloated and outdated user interfaces, AlloyEditor will turn any Web editing moment into a peaceful experience.');
-      ie_close('p');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_corazon.png');
-      ie_close('img');
-      ie_close('div');
-      ie_close('section');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.highlights = $highlights;
-    if (goog.DEBUG) {
-      $highlights.soyTemplateName = 'pageIndex.highlights';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $testimonial(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'features');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('div', null, null, 'class', 'row text-center');
-      ie_open('h3', null, null, 'class', 'highlight-title');
-      itext('Testimonials');
-      ie_close('h3');
-      ie_open('section', null, null, 'class', 'feature col-md-12 col-md-offset-2 col-lg-10 col-lg-offset-3');
-      ie_open('div', null, null, 'class', 'feature-graphic col-md-3');
-      ie_void('span', null, null, 'class', 'icon-16-bullhorn');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'col-md-13 text-left');
-      ie_open('p', null, null, 'class', 'feature-description');
-      itext('"The new AlloyEditor is so intuitive, simple, and useful that you won\'t realize you are actually using an editor. Just focus on the content while AlloyEditor takes care of all the rest."');
-      ie_close('p');
-      ie_open('p', null, null, 'class', 'h4');
-      itext(' \u2014 Sergio Gonz\xE1lez, Collaboration Lead, Liferay Inc.');
-      ie_close('p');
-      ie_close('div');
-      ie_close('section');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.testimonial = $testimonial;
-    if (goog.DEBUG) {
-      $testimonial.soyTemplateName = 'pageIndex.testimonial';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $footer(opt_data, opt_ignored, opt_ijData) {
-      ie_open('footer', null, null, 'class', 'footer');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
-      itext('Copyright \xA9 2017 ');
-      ie_open('a', null, null, 'href', 'https://liferay.com');
-      itext('Liferay, Inc');
-      ie_close('a');
-      ie_close('p');
-      ie_open('p', null, null, 'class', 'footer-description col-md-6');
-      itext('Powered by ');
-      ie_open('a', null, null, 'href', 'http://wedeploy.com');
-      itext('WeDeploy\u2122');
-      ie_close('a');
-      ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_close('footer');
-    }
-    exports.footer = $footer;
-    if (goog.DEBUG) {
-      $footer.soyTemplateName = 'pageIndex.footer';
-    }
-
-    exports.render.params = ["site"];
-    exports.render.types = { "site": "any" };
-    exports.header.params = ["site"];
-    exports.header.types = { "site": "any" };
-    exports.demo.params = [];
-    exports.demo.types = {};
-    exports.highlights.params = [];
-    exports.highlights.types = {};
-    exports.testimonial.params = [];
-    exports.testimonial.types = {};
-    exports.footer.params = [];
-    exports.footer.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  Soy.register(pageIndex, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['pageIndex'] = pageIndex;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  ;
-
-  Soy.register(pageIndex, templates);
-
-  this['metal']['pageIndex'] = pageIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
     // This file was automatically generated from Demo.soy.
     // Please don't edit this file by hand.
 
@@ -22945,6 +22603,348 @@ babelHelpers;
 	Soy.register(Sidebar, templates);
 
 	this['metal']['Sidebar'] = Sidebar;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageIndex.
+     * @public
+     */
+
+    goog.module('pageIndex.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('Demo.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param104 = function param104() {
+        $header(opt_data, null, opt_ijData);
+        $demo(null, null, opt_ijData);
+        $highlights(null, null, opt_ijData);
+        $testimonial(null, null, opt_ijData);
+        $footer(null, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param104 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageIndex.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $header(opt_data, opt_ignored, opt_ijData) {
+      ie_open('header', null, null, 'class', 'header header-hero');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('h1', null, null, 'class', 'header-title');
+      itext('ALLOY');
+      ie_open('strong');
+      itext('EDITOR');
+      ie_close('strong');
+      ie_close('h1');
+      ie_open('h2', null, null, 'class', 'header-subtitle');
+      var dyn11 = opt_data.site.index.description;
+      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+      ie_close('h2');
+      ie_open('h3');
+      itext('Supported browsers: IE9+  -  Edge  -  Chrome  -  Firefox  -  Safari');
+      ie_close('h3');
+      ie_open('div', null, null, 'class', 'header-cta');
+      ie_open('a', null, null, 'href', '#', 'class', 'btn btn-primary');
+      itext('GET STARTED');
+      ie_close('a');
+      ie_open('a', null, null, 'href', '#', 'class', 'btn btn-default');
+      itext('DOWNLOAD (1.3.1)');
+      ie_close('a');
+      ie_close('div');
+      ie_close('div');
+      ie_close('header');
+    }
+    exports.header = $header;
+    if (goog.DEBUG) {
+      $header.soyTemplateName = 'pageIndex.header';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $demo(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'container-alloyeditor');
+      ie_open('div', null, null, 'class', 'container-fluid container-fluid-960');
+      var param118 = function param118() {
+        ie_open('div', null, null, 'class', 'col-md-16');
+        ie_open('h3', null, null, 'class', 'highlight-title');
+        itext('In live demo, click/touch here');
+        ie_close('h3');
+        ie_open('p', null, null, 'class', 'highlight-description');
+        itext('Throug the WHY, a story will arise, which will create trust and make an idea, a service, or a project uniqu. ');
+        ie_open('strong');
+        itext('As Simon Sinek has said');
+        ie_close('strong');
+        itext(', having loyal users is all about attracting the people who share ');
+        ie_open('u');
+        itext('your fundamental beliefs');
+        ie_close('u');
+        itext('. Remember: ');
+        ie_open('cite');
+        itext('People don\'t buy what you do');
+        ie_close('cite');
+        itext('. They buy why you do it. I\'ll say it again: People don\'t buy what you do. They buy why you do it.');
+        ie_close('p');
+        ie_close('div');
+      };
+      $templateAlias2({ divId: 'why', contentHtml: param118 }, null, opt_ijData);
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.demo = $demo;
+    if (goog.DEBUG) {
+      $demo.soyTemplateName = 'pageIndex.demo';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $highlights(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'highlights');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('section', null, null, 'class', 'highlight row');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
+      ie_open('h3', null, null, 'class', 'highlight-title');
+      itext('The core is separated from the UI');
+      ie_close('h3');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('The main idea behind the editor is to fully separate the core from the UI. And not only to separate it, but to allow people to easily add new Buttons and Toolbars or event to create a completely new UI based on a different Framework or even vanilla JavaScript.');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('The core AlloyEditor uses CKEditor under the hood to deal with the editable content.This means the existing CKEditor plugins can be reused.');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
+      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_ui.png');
+      ie_close('img');
+      ie_close('div');
+      ie_close('section');
+      ie_open('section', null, null, 'class', 'highlight row');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-push-9');
+      ie_open('h3', null, null, 'class', 'highlight-title');
+      itext('So many things to do!');
+      ie_close('h3');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('AlloyEditor comes out of the box with as much editing power as you\'ll probably ever need, but we plan to keep on adding new features so you can edit your content in any way you can imagine.');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('Community Powered In addition to the out of the box options, AlloyEditor you can easily leverage any of the existing functionality and plugins developed for CKEditor.');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
+      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_estanterias.png');
+      ie_close('img');
+      ie_close('div');
+      ie_close('section');
+      ie_open('section', null, null, 'class', 'highlight row');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
+      ie_open('h3', null, null, 'class', 'highlight-title');
+      itext('We ');
+      ie_void('span', null, null, 'class', 'icon-16-heart-full');
+      itext(' Writing');
+      ie_close('h3');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('In the AlloyEditor team, we believe the content is the king, and so, we want to create a simple user interface where what you write is all that really matters.');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('After years of suffering bloated and outdated user interfaces, AlloyEditor will turn any Web editing moment into a peaceful experience.');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
+      ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/features_corazon.png');
+      ie_close('img');
+      ie_close('div');
+      ie_close('section');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.highlights = $highlights;
+    if (goog.DEBUG) {
+      $highlights.soyTemplateName = 'pageIndex.highlights';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $testimonial(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'features');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('div', null, null, 'class', 'row text-center');
+      ie_open('h3', null, null, 'class', 'highlight-title');
+      itext('Testimonials');
+      ie_close('h3');
+      ie_open('section', null, null, 'class', 'feature col-md-12 col-md-offset-2 col-lg-10 col-lg-offset-3');
+      ie_open('div', null, null, 'class', 'feature-graphic col-md-3');
+      ie_void('span', null, null, 'class', 'icon-16-bullhorn');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-13 text-left');
+      ie_open('p', null, null, 'class', 'feature-description');
+      itext('"The new AlloyEditor is so intuitive, simple, and useful that you won\'t realize you are actually using an editor. Just focus on the content while AlloyEditor takes care of all the rest."');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'h4');
+      itext(' \u2014 Sergio Gonz\xE1lez, Collaboration Lead, Liferay Inc.');
+      ie_close('p');
+      ie_close('div');
+      ie_close('section');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.testimonial = $testimonial;
+    if (goog.DEBUG) {
+      $testimonial.soyTemplateName = 'pageIndex.testimonial';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $footer(opt_data, opt_ignored, opt_ijData) {
+      ie_open('footer', null, null, 'class', 'footer');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('div', null, null, 'class', 'row');
+      ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
+      itext('Copyright \xA9 2017 ');
+      ie_open('a', null, null, 'href', 'https://liferay.com');
+      itext('Liferay, Inc');
+      ie_close('a');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'footer-description col-md-6');
+      itext('Powered by ');
+      ie_open('a', null, null, 'href', 'http://wedeploy.com');
+      itext('WeDeploy\u2122');
+      ie_close('a');
+      ie_close('p');
+      ie_close('div');
+      ie_close('div');
+      ie_close('footer');
+    }
+    exports.footer = $footer;
+    if (goog.DEBUG) {
+      $footer.soyTemplateName = 'pageIndex.footer';
+    }
+
+    exports.render.params = ["site"];
+    exports.render.types = { "site": "any" };
+    exports.header.params = ["site"];
+    exports.header.types = { "site": "any" };
+    exports.demo.params = [];
+    exports.demo.types = {};
+    exports.highlights.params = [];
+    exports.highlights.types = {};
+    exports.testimonial.params = [];
+    exports.testimonial.types = {};
+    exports.footer.params = [];
+    exports.footer.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  Soy.register(pageIndex, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['pageIndex'] = pageIndex;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  ;
+
+  Soy.register(pageIndex, templates);
+
+  this['metal']['pageIndex'] = pageIndex;
 }).call(this);
 'use strict';
 
